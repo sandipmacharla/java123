@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: vertex-scv
   labels: 
-  app: mycgjavapp
+   app: mycgjavapp
 spec: 
   type: NodePort
   ports: 
