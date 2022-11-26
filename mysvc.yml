@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vertex-scv
+  labels: 
+  app: mycgjavapp
+spec: 
+  type: NodePort
+  ports: 
+   - port: 8080
+     nodeport: 30001
+     protocol: TCP
+  selector: 
+    app: mycgjavapp    

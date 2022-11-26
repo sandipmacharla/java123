@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: vertex-rc
+spec:
+  replicas: 5
+  selector:
+   app: mycgjavapp
+   version: 2.6.2
+  templete:
+    metadata:
+     labels:
+      app: mycgjavapp
+      version: 2.6.2
+    spec: 
+       containers: 
+          - name: mycgjavapp-container
+            image: laxmikant7007/mycgjavapp:1
+            ports:
+               - containerPort: 8080
+          
+       
