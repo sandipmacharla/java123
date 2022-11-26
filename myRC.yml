@@ -12,11 +12,11 @@ spec:
      labels:
       app: mycgjavapp
       version: 2.6.2
-    spec: 
-       containers: 
-          - name: mycgjavapp-container
-            image: laxmikant7007/mycgjavapp:1
-            ports:
-               - containerPort: 8080
+spec: 
+    containers: 
+     - name: mycgjavapp-container
+       image: laxmikant7007/mycgjavapp:1
+       ports:
+         - containerPort: 8080
           
        
