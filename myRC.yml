@@ -7,7 +7,7 @@ spec:
   selector:
    app: mycgjavapp
    version: 2.6.2
-  templete:
+  template:
     metadata:
      labels:
           app: mycgjavapp
