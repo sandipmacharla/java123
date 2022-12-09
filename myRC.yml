@@ -5,17 +5,17 @@ metadata:
 spec:
   replicas: 5
   selector:
-   app: mycgjavapp
+   app: verteximage9dec22
    version: 2.6.2
   template:
     metadata:
      labels:
-          app: mycgjavapp
+          app: verteximage9dec22
           version: 2.6.2
     spec: 
       containers: 
         - name: mycgjavapp-container
-          image: laxmikant7007/mycgjavapp:1
+          image: sandip1994/verteximage9dec22:1
           ports:
           - containerPort: 8080
           
